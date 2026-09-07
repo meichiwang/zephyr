@@ -23,6 +23,8 @@ manifest:
       url-base: https://github.com/zephyrproject-rtos
     - name: babblesim
       url-base: https://github.com/BabbleSim
+    - name: personal
+      url-base: https://github.com/meichiwang
 
   group-filter: [-babblesim, -optional]
 
@@ -380,6 +382,15 @@ manifest:
       revision: 9b07780aca6fb21f82a241ba386ad9b379809337
       path: modules/lib/zcbor
   # zephyr-keep-sorted-stop
+
+    - name: my_app
+      remote: personal
+      revision: main
+      path: my_app
+    - name: my_drivers
+      remote: personal
+      revision: main
+      path: modules/my_drivers
 
   self:
     path: zephyr
